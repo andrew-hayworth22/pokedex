@@ -10,7 +10,7 @@ func (r *Repl) Inspect() error {
 	pokemonName := r.arguments[0]
 	pokemon, ok := r.pokedex[pokemonName]
 	if !ok {
-		return fmt.Errorf("You have not captured a %s", pokemonName)
+		return fmt.Errorf("you have not captured a %s", pokemonName)
 	}
 
 	printPokemon(pokemon)
