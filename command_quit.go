@@ -5,7 +5,7 @@ import (
 	"os"
 )
 
-func Quit() error {
+func (r *Repl) Quit() error {
 	fmt.Println("See ya!")
 	os.Exit(0)
 	return nil
